@@ -24,11 +24,11 @@ SELECT
 FROM 
     RankedProducts
 WHERE 
-    SalesRank <= 5;id,
-    p.product_name,
-    t.total_quantity
+    SalesRank <= 5;otal_quantity
 FROM 
-    TopFiveProducts t
+    TopFiveProducts
+WHERE 
+    rank <= 5;eProducts t
 JOIN 
     products p ON t.product_id = p.product_id
 WHERE 
